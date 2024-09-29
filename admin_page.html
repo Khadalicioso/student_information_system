@@ -31,92 +31,37 @@
         <a href="/" target="_blank">Sign Out</a>
       </div>
 
-      <table>
-        <thead>
-          <th>TIME</th>
-          <th>MON</th>
-          <th>TUE</th>
-          <th>WED</th>
-          <th>THU</th>
-          <th>FRI</th>
-          <th>ROOM</th>
-        </thead>
-
-        <tbody>
-          <tr>
-            <th>8:00 - 9:00</th>
-            <th>TVL</th>
-            <th>ABM</th>
-            <th>HUMSS</th>
-            <th>STEM</th>
-            <th>GAS</th>
-            <th>IL505</th>
-          </tr>
-          <tr>
-            <th>9:00 - 10:00</th>
-            <th>TVL</th>
-            <th>ABM</th>
-            <th>HUMSS</th>
-            <th>STEM</th>
-            <th>GAS</th>
-            <th>IL505</th>
-          </tr>
-          <tr>
-            <th>10:00 - 11:00</th>
-            <th>TVL</th>
-            <th>ABM</th>
-            <th>HUMSS</th>
-            <th>STEM</th>
-            <th>GAS</th>
-            <th>IL505</th>
-          </tr>
-          <tr>
-            <th>8:30 - 9:30</th>
-            <th>TVL</th>
-            <th>ABM</th>
-            <th>HUMSS</th>
-            <th>STEM</th>
-            <th>GAS</th>
-            <th>IL505</th>
-          </tr>
-          <tr>
-            <th>9:30 - 10:30</th>
-            <th>TVL</th>
-            <th>ABM</th>
-            <th>HUMSS</th>
-            <th>STEM</th>
-            <th>GAS</th>
-            <th>IL505</th>
-          </tr>
-          <tr>
-            <th>10:30 - 11:30</th>
-            <th>TVL</th>
-            <th>ABM</th>
-            <th>HUMSS</th>
-            <th>STEM</th>
-            <th>GAS</th>
-            <th>IL505</th>
-          </tr>
-          <tr>
-            <th>11:30 - 12:30</th>
-            <th>TVL</th>
-            <th>ABM</th>
-            <th>HUMSS</th>
-            <th>STEM</th>
-            <th>GAS</th>
-            <th>IL505</th>
-          </tr>
-          <tr>
-            <th>12:30 - 1:30</th>
-            <th>TVL</th>
-            <th>ABM</th>
-            <th>HUMSS</th>
-            <th>STEM</th>
-            <th>GAS</th>
-            <th>IL505</th>
-          </tr>
-        </tbody>
-      </table>
+      <div class="calendar">
+        <div class="header">
+          <div class="month">July 2021</div>
+          <div class="btns">
+            <!-- today -->
+            <div class="btn today">
+              <i class="fas fa-calendar-day"></i>
+            </div>
+            <!-- previous month -->
+            <div class="btn prev">
+              <i class="fas fa-chevron-left"></i>
+            </div>
+            <!-- next month -->
+            <div class="btn next">
+              <i class="fas fa-chevron-right"></i>
+            </div>
+          </div>
+        </div>
+        <div class="weekdays">
+          <div class="day">Sun</div>
+          <div class="day">Mon</div>
+          <div class="day">Tue</div>
+          <div class="day">Wed</div>
+          <div class="day">Thu</div>
+          <div class="day">Fri</div>
+          <div class="day">Sat</div>
+        </div>
+        <div class="days">
+          <!-- render days with js -->
+        </div>
+      </div>
     </div>
 
     <script src="/script.js"></script>

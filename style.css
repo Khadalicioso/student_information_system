@@ -144,7 +144,7 @@ button {
   align-items: center;
   flex-direction: column;
   margin-top: 10px;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
   background: #e1aa74;
   border-radius: 24px;
   width: 250px;
@@ -159,26 +159,116 @@ button {
   text-transform: uppercase;
 }
 
-table,
-tr,
-th {
-  border: 1px solid #000000;
-  background-color: #ffffff;
-  text-align: center;
-  font-size: 16px;
-  display: center;
-  padding: 5px;
-  table-layout: auto;
-  tab-size: 200pc 150px;
-  color: #000000;
-  float: center;
-  border-radius: 5px;
+.calendar {
+  position: relative;
+  bottom: 420px;
+  left: 300px;
+  width: 100%;
+  max-width: 600px;
+  background: #ffffff;
+  padding: 30px 20px;
+  border-radius: 10px;
 }
 
-table {
-  position: relative;
-  bottom: 290px;
-  left: 275px;
-  width: 700px;
-  height: 350px;
+.calendar .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 2px solid #ccc;
+}
+
+.calendar .header .month {
+  display: flex;
+  align-items: center;
+  font-size: 25px;
+  font-weight: 600;
+  color: #1d1d1d;
+}
+
+.calendar .header .btns {
+  display: flex;
+  gap: 10px;
+}
+
+.calendar .header .btns .btn {
+  width: 50px;
+  height: 40px;
+  background: #e1aa74;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.calendar .header .btns .btn:hover {
+  transform: scale(1.05);
+}
+
+.calendar .weekdays {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.calendar .weekdays .day {
+  width: calc(100% / 7 - 10px);
+  text-align: center;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.calendar .days {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.calendar .days .day {
+  width: calc(100% / 7 - 10px);
+  height: 50px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #000000;
+  transition: all 0.3s;
+  user-select: none;
+}
+
+.calendar .days .day:not(.next):not(.prev):hover {
+  color: #ffffff;
+  background: #e1aa74;
+  transform: scale(1.05);
+}
+
+.calendar .days .day.next,
+.calendar .days .day.prev {
+  color: #ccc;
+}
+
+.calendar .days .day.today {
+  color: #fff;
+  background: #e1aa74;
+}
+
+.credits a {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 14px;
+  color: #aaa;
+}
+
+.credits span {
+  color: #f90a39;
 }
