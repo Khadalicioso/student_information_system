@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Imprima&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing : border-box;
+    font-family: "Imprima", sans-serif;
+}
+
+body {
+    background-color: #fff;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Login As */
+.container {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 200px;
+}
+
+.login-container {
+    background-color: #1B0E60;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 490px;
+    height: 465px;
+}
+.login-title {
+    font-size: 39px;
+    color: #fff;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.login-btn {
+    display: flex;
+    font-size: 40px;
+    font-weight: 600;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    margin: 20px 0;
+    padding: 20px 0;
+    color: #fff;
+    background-color: #E1AA74;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 24px;
+}
+
+/* Login Auth */
+
+.social-sign-in {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+.input-google {
+    margin-top: 100px;
+    width: 100%;
+    height: 50px;
+    padding: 0 30px;
+    background: #FFF;
+    border: 1px solid #CCC;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.input-google img{
+    width: 42px;
+}
+.input-google p{
+    font-size: 17px;
+    font-weight: 300;
+    width: 90%;
+}
+
+/* Admin Page */
