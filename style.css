@@ -8,80 +8,97 @@
 }
 
 body {
-    background-color: #fff;
-    overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-left: 250px;
+    width: 1440px;
+    height: 994px;
+    overflow: hidden;
 }
 
 /* Login As */
-.container {
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    margin-top: 200px;
+
+.login-box {
+    position: relative;
+    width: 425px;
+    height: 490px;
+    padding: 10px 30px;
+    background: #1B0E60;
+    border-radius: 10px;
 }
 
-.login-container {
-    background-color: #1B0E60;
-    padding: 20px;
-    border-radius: 12px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 490px;
-    height: 465px;
-}
-.login-title {
-    font-size: 39px;
-    color: #fff;
-    margin-bottom: 20px;
-    margin-top: 20px;
-}
-.login-btn {
+.login-header {
     display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 20px 0 50px 0;
+}
+
+.login-header header {
+    color: #FFFFFF;
+    font-size: 48px;
+    font-weight: 600;
+}
+
+.login-as-box {
+    display: flex;
+    place-items: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+    background: #E1AA74;
+    border-radius: 24px;
+    width: 200px;
+    height: 60px;
+    margin-left: 85px;
+}
+
+.login-as-box a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #FFFFFF;
     font-size: 40px;
     font-weight: 600;
-    flex-direction: row;
-    text-align: center;
-    justify-content: center;
-    margin: 20px 0;
-    padding: 20px 0;
-    color: #fff;
-    background-color: #E1AA74;
-    text-decoration: none;
-    cursor: pointer;
-    border-radius: 24px;
 }
 
 /* Login Auth */
 
-.social-sign-in {
+.login-auth {
     display: flex;
-    gap: 15px;
     justify-content: center;
+    align-items: center;
 }
 
-.input-google {
-    margin-top: 100px;
-    width: 100%;
-    height: 50px;
-    padding: 0 30px;
-    background: #FFF;
-    border: 1px solid #CCC;
+button {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     border-radius: 5px;
     cursor: pointer;
-}
-.input-google img{
-    width: 42px;
-}
-.input-google p{
-    font-size: 17px;
-    font-weight: 300;
-    width: 90%;
+    margin-top: 150px;
 }
 
-/* Admin Page */
+.login-google {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    width: 250px;
+    height: 30px;
+    padding: 0 30px;
+    background: #FFFFFF;
+}
+
+.login-google img {
+    width: 40px;
+    position: absolute;
+    left: 100px;
+}
+
+.login-google p {
+    font-size: 17px;
+    font-weight: 600;
+    position: absolute;
+    right: 125px;
+}
