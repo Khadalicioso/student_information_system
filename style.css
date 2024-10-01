@@ -1,10 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Imprima&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Imprima", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 body {
@@ -15,6 +15,7 @@ body {
   width: 1440px;
   height: 1000px;
   overflow: hidden;
+  z-index: 100;
 }
 
 /* Login As */
@@ -71,15 +72,6 @@ body {
   align-items: center;
 }
 
-button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 5px;
-  cursor: pointer;
-  margin-top: 150px;
-}
-
 .login-google {
   display: flex;
   justify-content: center;
@@ -88,6 +80,9 @@ button {
   height: 50px;
   padding: 0 30px;
   background: #ffffff;
+  border-radius: 5px;
+  margin-top: 150px;
+  cursor: pointer;
 }
 
 .login-google img {
@@ -100,7 +95,7 @@ button {
   font-size: 20px;
   font-weight: 600;
   position: absolute;
-  right: 95px;
+  right: 80px;
 }
 
 /* Admin / Faculty */
@@ -143,8 +138,7 @@ button {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin-top: 10px;
-  margin-bottom: 40px;
+  margin-top: 20px;
   background: #e1aa74;
   border-radius: 24px;
   width: 250px;
@@ -154,14 +148,14 @@ button {
 .faculty-box a {
   text-decoration: none;
   color: #000000;
-  font-size: 40px;
+  font-size: 35px;
   font-weight: 600;
   text-transform: uppercase;
 }
 
 .calendar {
   position: relative;
-  bottom: 420px;
+  bottom: 370px;
   left: 300px;
   width: 100%;
   max-width: 600px;
@@ -271,4 +265,73 @@ button {
 
 .credits span {
   color: #f90a39;
+}
+
+/* Student List */
+
+.student-list-container {
+  position: relative;
+  width: 1024px;
+  height: 700px;
+  padding: 10px 30px;
+  background: #192655;
+  border-radius: 12px;
+}
+
+.student-list-btn {
+  position: relative;
+  top: 5px;
+  right: 15px;
+  width: 150px;
+  height: 50px;
+  background: #d57744;
+  color: #000000;
+  border-radius: 5px;
+  font-size: 30px;
+  font-weight: 700;
+  cursor: pointer;
+  place-items: center;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-left: 12px;
+  margin-bottom: 20px;
+}
+
+.student-list-table {
+  background: #ffffff;
+  overflow: scroll;
+}
+
+.student-list-th,
+.student-list-td {
+  text-align: center;
+  width: 975px;
+}
+
+.student-table,
+.student-list-th,
+.student-list-td {
+  border: 1px solid #000000;
+}
+
+.arrow {
+  width: 60px;
+  height: 60px;
+  background: #000000;
+  position: relative;
+  top: -40%;
+  left: -10%;
+  transform: rotate(-45deg);
+  cursor: pointer;
+}
+
+.arrow::after {
+  content: "";
+  position: absolute;
+  height: 60px;
+  width: 60px;
+  background: #ffffff;
+  top: 10px;
+  left: 10px;
 }
