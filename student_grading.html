@@ -4,7 +4,46 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Student Grading</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css"
+    />
     <link rel="stylesheet" href="/style.css" />
   </head>
-  <body></body>
+  <body>
+    <div class="arrow left"></div>
+    <div class="student-grading-container">
+      <h1 class="student-grading-h1" id="student-grading-course">COURSE ID:</h1>
+      <h1 class="student-grading-h1" id="student-gradin-section">SECTION ID:</h1>
+      <div class="student-grading-search">
+        <form class="search-section" id="searchForm">
+          <input
+            type="text"
+            id="searchInput"
+            placeholder="Search"
+            required
+            autocomplete="off"
+          />
+          <i class="ri-search-line"></i>
+        </form>
+      </div>
+
+      <table class="student-grading-table">
+        <tr class="student-grading-tr">
+          <th class="student-grading-th">STUDENT ID</th>
+          <th class="student-grading-th">FULL NAME</th>
+          <th class="student-grading-th">GRADES</th>
+          <th class="student-grading-th">REMARKS</th>
+        </tr>
+        <tr class="student-grading-tr"></tr>
+          <td class="student-grading-td">22-0224</td>
+          <td class="student-grading-td">Señora, Franz Jeremy V.</td>
+          <td class="student-grading-td">97</td>
+          <td class="student-grading-td">PASSED</td>
+        </tr>
+      </table>
+    </div>
+
+    <script src="/script.js"></script>
+  </body>
 </html>

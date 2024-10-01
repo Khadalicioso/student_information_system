@@ -296,6 +296,7 @@ body {
   text-align: center;
   margin-left: 12px;
   margin-bottom: 20px;
+  border: none;
 }
 
 .student-list-table {
@@ -334,4 +335,72 @@ body {
   background: #ffffff;
   top: 10px;
   left: 10px;
+}
+
+.student-grading-container {
+  position: relative;
+  width: 1024px;
+  height: 700px;
+  padding: 10px 30px;
+  background: #192655;
+  border-radius: 12px;
+}
+
+.student-grading-h1 {
+  font-size: 48px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.student-grading-search {
+  position: relative;
+  top: 25%;
+  left: 70%;
+  border-radius: 24px;
+  width: 30%;
+  height: 56px;
+  padding-left: 20px;
+}
+
+.student-grading-search .search-section{
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+  border-radius: 12px;
+  width: 100%;
+}
+
+.student-grading-search .search-section input{
+  padding: 10px 6px;
+  background: #d57744;
+  color: #ffffff;
+  font-size: 14px;
+  border: none;
+  border-radius: 14px;
+  margin-right: 10px;
+}
+
+.student-grading-search .search-section input::placeholder,
+.student-grading-search .search-section i{
+  color: #ffffff;
+  text-align: left;
+}
+
+.student-grading-table {
+  position: relative;
+  top: 25%;
+  background: #ffffff;
+  overflow: scroll;
+}
+
+.student-grading-th,
+.student-grading-td {
+  text-align: center;
+  width: 975px;
+}
+
+.student-grading-table,
+.student-grading-th,
+.student-grading-td {
+  border: 1px solid #000000;
 }
