@@ -352,38 +352,38 @@ body {
   color: #ffffff;
 }
 
-.student-grading-search {
+.student-grading-search-form {
   position: relative;
-  top: 25%;
-  left: 70%;
-  border-radius: 24px;
-  width: 30%;
-  height: 56px;
-  padding-left: 20px;
-}
-
-.student-grading-search .search-section{
+  top: 150px;
+  width: 100%;
   display: flex;
   align-items: center;
-  padding: 0 10px;
-  border-radius: 12px;
-  width: 100%;
+  justify-content: end;
 }
 
-.student-grading-search .search-section input{
-  padding: 10px 6px;
+.student-grading-search {
+  width: max-content;
+  display: flex;
+  align-items: center;
+  padding: 14px;
+  border-radius: 28px;
   background: #d57744;
-  color: #ffffff;
-  font-size: 14px;
-  border: none;
-  border-radius: 14px;
-  margin-right: 10px;
 }
 
-.student-grading-search .search-section input::placeholder,
-.student-grading-search .search-section i{
-  color: #ffffff;
-  text-align: left;
+.student-search-input {
+  font-size: 16px;
+  font-weight: 700;
+  color: #000000;
+  margin-left: 14px;
+  outline: none;
+  border: none;
+  background: transparent;
+  width: 300px;
+}
+
+.student-search-input::placeholder,
+.student-search-icon {
+  color: rgba(0, 0, 0, 0.5);
 }
 
 .student-grading-table {
