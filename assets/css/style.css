@@ -337,6 +337,8 @@ body {
   left: 10px;
 }
 
+/* Student Grading */
+
 .student-grading-container {
   position: relative;
   width: 1440px;
@@ -404,6 +406,8 @@ body {
 .student-grading-td {
   border: 1px solid #000000;
 }
+
+/* Student Search */
 
 .student-search-container {
   position: relative;
