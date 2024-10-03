@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Admin Page</title>
+    <title>Faculty Homepage</title>
     <link rel="stylesheet" href="/assets/css/style.css" />
     <!-- Font Awesome -->
     <link
@@ -15,21 +15,17 @@
     />
   </head>
   <body>
-    <div class="faculty-container">
-      <div class="professor-box">
+    <div class="faculty-page-container">
+      <div class="faculty-page-box">
         <img src="/assets/images/user.png" alt="Professor Image" />
-        <p>Professor Name</p>
+        <h1>Professor Name</h1>
       </div>
 
-      <div class="faculty-box">
-        <a href="/" target="_blank">Student List</a>
-      </div>
-      <div class="faculty-box">
-        <a href="/" target="_blank">Grading</a>
-      </div>
-      <div class="faculty-box">
-        <a href="/login_as.html" target="_blank">Sign Out</a>
-      </div>
+      <button class="faculty-page-button" id="student-list">
+        Student List
+      </button>
+      <button class="faculty-page-button" id="student-list">Grading</button>
+      <button class="faculty-page-button" id="sign-out">Sign Out</button>
 
       <div class="calendar">
         <div class="header">

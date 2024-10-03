@@ -20,7 +20,7 @@ body {
 
 /* Login As */
 
-.login-box {
+.login-as-container {
   position: relative;
   width: 425px;
   height: 490px;
@@ -29,20 +29,20 @@ body {
   border-radius: 10px;
 }
 
-.login-header {
+.login-as-header {
   display: flex;
   flex-direction: column;
   text-align: center;
   margin: 20px 0 50px 0;
 }
 
-.login-header header {
+.login-as-header header {
   color: #ffffff;
   font-size: 48px;
   font-weight: 600;
 }
 
-.login-as-box {
+.login-as-button {
   display: flex;
   place-items: center;
   justify-content: center;
@@ -54,22 +54,45 @@ body {
   width: 200px;
   height: 60px;
   margin-left: 85px;
+  border: none;
+  outline: none;
+  cursor: pointer;
 }
 
-.login-as-box a {
+.login-as-button {
   text-decoration: none;
   text-transform: uppercase;
   color: #ffffff;
   font-size: 40px;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 /* Login Auth */
 
-.login-auth {
+.login-auth-container {
+  position: relative;
+  width: 425px;
+  height: 490px;
+  padding: 10px 30px;
+  background: #1b0e60;
+  border-radius: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.login-auth-header {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 20px 50px;
+  margin-bottom: 40%;
+}
+
+.login-auth-header header {
+  color: #ffffff;
+  font-size: 48px;
+  font-weight: 700;
 }
 
 .login-google {
@@ -78,10 +101,10 @@ body {
   align-items: center;
   width: 300px;
   height: 50px;
-  padding: 0 30px;
+  padding: 30px;
   background: #ffffff;
   border-radius: 5px;
-  margin-top: 150px;
+  margin-top: 30%;
   cursor: pointer;
 }
 
@@ -98,9 +121,9 @@ body {
   right: 80px;
 }
 
-/* Admin / Faculty */
+/* Faculty Homepage */
 
-.faculty-container {
+.faculty-page-container {
   position: relative;
   width: 1440px;
   height: 700px;
@@ -109,29 +132,29 @@ body {
   border-radius: 12px;
 }
 
-.professor-box {
+.faculty-page-box {
   flex-direction: column;
   margin-top: 50px;
   margin-left: 50px;
 }
 
-.professor-box img {
+.faculty-page-box img {
   width: 150px;
   height: 150px;
   background: #ffffff;
   border-radius: 5px;
 }
 
-.professor-box p {
+.faculty-page-box h1 {
   position: relative;
   left: 200px;
-  bottom: 120px;
+  bottom: 140px;
   font-size: 80px;
   font-weight: 600;
   color: #ffffff;
 }
 
-.faculty-box {
+.faculty-page-button {
   position: inherit;
   top: 80px;
   display: grid;
@@ -143,14 +166,14 @@ body {
   border-radius: 24px;
   width: 250px;
   height: 65px;
-}
-
-.faculty-box a {
   text-decoration: none;
   color: #000000;
   font-size: 35px;
-  font-weight: 600;
+  font-weight: 700;
   text-transform: uppercase;
+  border: none;
+  outline: none;
+  cursor: pointer;
 }
 
 .calendar {
@@ -267,9 +290,9 @@ body {
   color: #f90a39;
 }
 
-/* Student List */
+/* Faculty Student List */
 
-.student-list-container {
+.faculty-student-list-container {
   position: relative;
   width: 1440px;
   height: 700px;
@@ -278,7 +301,7 @@ body {
   border-radius: 12px;
 }
 
-.student-list-btn {
+.faculty-student-list-btn {
   position: relative;
   top: 5px;
   right: 15px;
@@ -299,20 +322,20 @@ body {
   border: none;
 }
 
-.student-list-table {
+.faculty-student-list-table {
   background: #ffffff;
   overflow: scroll;
 }
 
-.student-list-th,
-.student-list-td {
+.faculty-student-list-th,
+.faculty-student-list-td {
   text-align: center;
   width: 975px;
 }
 
-.student-table,
-.student-list-th,
-.student-list-td {
+.faculty-student-table,
+.faculty-student-list-th,
+.faculty-student-list-td {
   border: 1px solid #000000;
 }
 
@@ -337,9 +360,9 @@ body {
   left: 10px;
 }
 
-/* Student Grading */
+/* Faculty Student Grading */
 
-.student-grading-container {
+.faculty-student-grading-container {
   position: relative;
   width: 1440px;
   height: 700px;
@@ -348,13 +371,13 @@ body {
   border-radius: 12px;
 }
 
-.student-grading-h1 {
+.faculty-student-grading-h1 {
   font-size: 48px;
   font-weight: 700;
   color: #ffffff;
 }
 
-.student-grading-search-form {
+.faculty-student-grading-search-form {
   position: relative;
   top: 150px;
   width: 100%;
@@ -363,7 +386,7 @@ body {
   justify-content: end;
 }
 
-.student-grading-search {
+.faculty-student-grading-search {
   width: max-content;
   display: flex;
   align-items: center;
@@ -372,7 +395,7 @@ body {
   background: #d57744;
 }
 
-.student-search-input {
+.faculty-student-search-input {
   font-size: 16px;
   font-weight: 700;
   color: #000000;
@@ -383,27 +406,27 @@ body {
   width: 300px;
 }
 
-.student-search-input::placeholder,
-.student-search-icon {
+.faculty-student-search-input::placeholder,
+.faculty-student-search-icon {
   color: rgba(0, 0, 0, 0.5);
 }
 
-.student-grading-table {
+.faculty-student-grading-table {
   position: relative;
   top: 25%;
   background: #ffffff;
   overflow: scroll;
 }
 
-.student-grading-th,
-.student-grading-td {
+.faculty-student-grading-th,
+.faculty-student-grading-td {
   text-align: center;
   width: 975px;
 }
 
-.student-grading-table,
-.student-grading-th,
-.student-grading-td {
+.faculty-student-grading-table,
+.faculty-student-grading-th,
+.faculty-student-grading-td {
   border: 1px solid #000000;
 }
 
@@ -462,6 +485,17 @@ body {
   cursor: pointer;
 }
 
+.student-search-input {
+  font-size: 16px;
+  font-weight: 700;
+  color: #000000;
+  margin-left: 14px;
+  outline: none;
+  border: none;
+  background: transparent;
+  width: max-content;
+}
+
 .student-filter-info:hover {
   background: #f2f2f2;
 }
@@ -489,4 +523,114 @@ body {
 .student-search-table,
 .student-search-td {
   border: 2px solid #000000;
+}
+
+/* Student Schedule */
+
+.student-schedule-container {
+  position: relative;
+  width: 1440px;
+  height: 700px;
+  padding: 10px 20px;
+  background: #192655;
+  border-radius: 12px;
+}
+
+.student-schedule-btn {
+  position: relative;
+  top: 9px;
+  left: 30%;
+  width: max-content;
+  height: 50px;
+  background: #d57744;
+  color: #000000;
+  border-radius: 5px;
+  font-size: 30px;
+  font-weight: 700;
+  cursor: pointer;
+  margin-left: 10px;
+  margin-bottom: 20px;
+  border: none;
+}
+
+.student-schedule-left {
+  position: absolute;
+  bottom: 3%;
+  width: max-content;
+  height: 660px;
+  margin-top: 10px;
+  padding: 10px 30px;
+  background: #ffffff;
+  border-radius: 12px;
+}
+
+.student-schedule-box img {
+  background: #d9d9d9;
+  position: relative;
+  left: 85px;
+  border-radius: 10px;
+}
+
+.student-schedule-box h1 {
+  margin-bottom: 50px;
+}
+
+.student-schedule-sign-out {
+  position: absolute;
+  left: 85px;
+  background: #e1aa74;
+  border-radius: 12px;
+  width: 250px;
+  height: 65px;
+  text-decoration: none;
+  color: #000000;
+  font-size: 35px;
+  font-weight: 700;
+  text-transform: uppercase;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.student-schedule-table {
+  position: relative;
+  top: 5%;
+  left: 31%;
+  background: #ffffff;
+  overflow: scroll;
+}
+
+.student-schedule-th,
+.student-schedule-td {
+  text-align: center;
+  width: 160px;
+}
+
+.student-schedule-table,
+.student-schedule-th,
+.student-schedule-td {
+  border: 1px solid #000000;
+}
+
+/* Student Grades */
+
+.student-grades-table {
+  position: relative;
+  top: 5%;
+  left: 31%;
+  background: #ffffff;
+  overflow: scroll;
+}
+
+.student-grades-th,
+.student-grades-td {
+  text-align: center;
+  width: 118px;
+}
+
+.student-grades-table,
+.student-grades-th,
+.student-grades-td {
+  border: 1px solid #000000;
 }
