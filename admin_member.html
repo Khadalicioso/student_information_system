@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Member</title>
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+  </head>
+  <body>
+    <div class="admin-right-section">
+      <ul>
+        <li><a href="/admin_homepage.html" class="admin-item">Admin</a></li>
+        <li><a href="/admin_faculty.html" class="admin-item">Faculty</a></li>
+        <li><a href="#" class="admin-item">Strand</a></li>
+        <li><a href="#" class="admin-item">Grading</a></li>
+        <li><a href="#" class="admin-item">Settings</a></li>
+      </ul>
+      <a href="/login_as.html" class="admin-sign-out" id="admin-sign-out"
+        >Sign Out</a
+      >
+    </div>
+
+    <div class="admin-left-section">
+      <div class="admin-arrow">
+        <ul>
+          <li>
+            <a href="/admin_faculty.html"
+              ><span class="material-symbols-outlined">
+                arrow_back_ios
+              </span></a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="admin-box-btn">
+        <button class="admin-save-btn">Save</button>
+        <button class="admin-edit-btn">Edit</button>
+        <button class="admin-delete-btn">Delete</button>
+      </div>
+      <div class="admin-member-container">
+        <div class="admin-member-content">
+          <div class="admin-member-profile">
+            <img
+              src="/assets/images/user.png"
+              alt="Profile Picture"
+              class="admin-member-img"
+            />
+          </div>
+        </div>
+        <div class="admin-member-info">
+          <h3>Name: Maria C. Santos</h3>
+          <h3>Age: 27</h3>
+          <h3>Birthdate: January 20, 1997</h3>
+          <h3>Sex: Female</h3>
+        </div>
+      </div>
+      <div class="admin-member-strands">
+        <button class="member-strand-btn">STEM</button>
+        <button class="member-strand-btn">ABM</button>
+        <button class="member-strand-btn">GAS</button>
+        <button class="member-strand-btn">HUMSS</button>
+        <button class="member-strand-btn">TVL</button>
+        <div class="admin-member-container-table">
+          <table class="admin-member-table">
+            <tr class="admin-member-tr">
+              <th class="admin-member-th">Day</th>
+              <th class="admin-member-th">Time</th>
+              <th class="admin-member-th">Subject</th>
+              <th class="admin-member-th">Room</th>
+              <th class="admin-member-th">Code</th>
+              <th class="admin-member-th">Subject Name</th>
+              <th class="admin-member-th">Remarks</th>
+            </tr>
+            <tr class="admin-member-tr">
+              <td class="admin-member-td"></td>
+              <td class="admin-member-td"></td>
+              <td class="admin-member-td"></td>
+              <td class="admin-member-td"></td>
+              <td class="admin-member-td"></td>
+              <td class="admin-member-td"></td>
+              <td class="admin-member-td">Advisory</td>
+            </tr>
+            <!-- Add more table rows here and remove this comment -->
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <script src="/assets/js/script.js"></script>
+  </body>
+</html>

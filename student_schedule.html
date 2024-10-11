@@ -5,11 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Student Schedule</title>
     <link rel="stylesheet" href="/assets/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_back_ios"
+    />
   </head>
   <body>
+    <div class="arrow-back">
+      <ul>
+        <li>
+          <a href="/student_search.html"
+            ><span class="material-symbols-outlined"> arrow_back_ios </span></a
+          >
+        </li>
+      </ul>
+    </div>
     <div class="student-schedule-container">
-      <button class="student-schedule-btn active">Schedule</button>
-      <button class="student-schedule-btn">Grades</button>
+      <div class="student-schedule-right">
+        <ul>
+          <li>
+            <a href="/student_schedule.html" class="student-schedule-btn active"
+              >Schedule</a
+            >
+          </li>
+          <li>
+            <a href="/student_grades.html" class="student-schedule-btn"
+              >Grades</a
+            >
+          </li>
+        </ul>
+      </div>
       <div class="student-schedule-left">
         <div class="student-schedule-box">
           <img src="/assets/images/user.png" alt="Student Image" />
@@ -25,29 +50,39 @@
           <h3>NAME:</h3>
           <h3>ADDRESS:</h3>
           <h3>CONTACT NO:</h3>
-          <button class="student-schedule-sign-out" id="sign-out">
-            Sign Out
-          </button>
+          <ul>
+            <li>
+              <a
+                href="/login_as.html"
+                class="student-schedule-sign-out"
+                id="sign-out"
+              >
+                Sign Out
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
-      <table class="student-schedule-table">
-        <tr class="student-schedule-tr">
-          <th class="student-schedule-th">Day</th>
-          <th class="student-schedule-th">Time</th>
-          <th class="student-schedule-th">Room</th>
-          <th class="student-schedule-th">Code</th>
-          <th class="student-schedule-th">Subject Name</th>
-          <th class="student-schedule-th">Professor</th>
-        </tr>
-        <tr class="student-schedule-tr">
-          <td class="student-schedule-td">Monday</td>
-          <td class="student-schedule-td">9:00 AM - 11:00 PM</td>
-          <td class="student-schedule-td">IL505</td>
-          <td class="student-schedule-td">N/A</td>
-          <td class="student-schedule-td">Computer Programming</td>
-          <td class="student-schedule-td">Franz Jeremy Señora</td>
-        </tr>
-      </table>
+      <section>
+        <table class="student-schedule-table">
+          <tr class="student-schedule-tr">
+            <th class="student-schedule-th">Day</th>
+            <th class="student-schedule-th">Time</th>
+            <th class="student-schedule-th">Room</th>
+            <th class="student-schedule-th">Code</th>
+            <th class="student-schedule-th">Subject Name</th>
+            <th class="student-schedule-th">Professor</th>
+          </tr>
+          <tr class="student-schedule-tr">
+            <td class="student-schedule-td">Monday</td>
+            <td class="student-schedule-td">9:00 AM - 11:00 PM</td>
+            <td class="student-schedule-td">IL505</td>
+            <td class="student-schedule-td">N/A</td>
+            <td class="student-schedule-td">Computer Programming</td>
+            <td class="student-schedule-td">Franz Jeremy Señora</td>
+          </tr>
+        </table>
+      </section>
     </div>
     <script src="/assets/js/script.js"></script>
   </body>

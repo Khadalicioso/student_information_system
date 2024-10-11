@@ -12,17 +12,30 @@
     <link rel="stylesheet" href="/assets/css/style.css" />
   </head> 
   <body>
-    <div class="arrow left" id="arrow-back"></div>
+    <div class="arrow-back"> 
+      <ul>
+        <li>
+          <a href="/faculty_homepage.html"
+            ><span class="material-symbols-outlined"> arrow_back_ios </span></a
+          >
+        </li>
+      </ul>
+    </div>
     <div class="faculty-student-grading-container">
       <h1 class="faculty-student-grading-h1" id="student-grading-course">COURSE ID:</h1>
       <h1 class="faculty-student-grading-h1" id="student-gradin-section">SECTION ID:</h1>
       <form class="faculty-student-grading-search-form">
         <div class="faculty-student-grading-search">
-          <span class="faculty-student-search-icon material-symbols-outlined">Search</span>
-          <input class="faculty-student-search-input" type="search" placeholder="Search">
+          <span class="faculty-student-grading-search-icon material-symbols-outlined">Search</span>
+          <input class="faculty-student-grading-search-input" type="search" placeholder="Search" />
         </div>
+        <button class="faculty-student-grading-filter-info">
+          <span class="material-symbols-outlined" id="student-filter">
+            filter_alt
+          </span>
+        </button>
       </form>
-
+      <div class="faculty-student-grading-container-table">
       <table class="faculty-student-grading-table">
         <tr class="faculty-student-grading-tr">
           <th class="faculty-student-grading-th">STUDENT ID</th>
@@ -37,6 +50,7 @@
           <td class="faculty-student-grading-td">PASSED</td>
         </tr>
       </table>
+    </div>
     </div>
 
     <script src="/assets/js/script.js"></script>
