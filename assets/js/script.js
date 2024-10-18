@@ -1,4 +1,4 @@
-// Calender
+// Calendar
 const daysContainer = document.querySelector(".days");
 const nextBtn = document.querySelector(".next");
 const prevBtn = document.querySelector(".prev");
